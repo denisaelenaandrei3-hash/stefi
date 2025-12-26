@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>La mulți ani, Stefi!</title>
+
+    <style>
+        body {
+            min-height: 100vh; /* ← cheia problemei */
+            margin: 0; /* elimină marginile default */
+            padding-top: 100px; /* în loc de margin-top */
+
+            background-image: url("fluture.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Pacifico, cursive;
+            text-align: center;
+            color: #4b1366;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+
+        button {
+            background-color: #9b59b6;
+            color: #4b1366;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+            button:hover {
+                background-color: #f2e6ff;
+            }
+
+        .content {
+            display: none;
+            margin-top: 30px;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 15px;
+        }
+
+        .letter {
+            background-color: rgba(195, 166, 216, 0.6);
+            color: #4b1366;
+            padding: 20px;
+            border-radius: 15px;
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+        }
+    </style>
+
+    <script>
+        function showPoza() {
+            document.getElementById("poza").style.display = "block";
+            document.getElementById("scrisoare").style.display = "none";
+        }
+
+        function showScrisoare() {
+            document.getElementById("scrisoare").style.display = "block";
+            document.getElementById("poza").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>🌟 La mulți ani, Stefi! 🌟</h1>
+
+    <button onclick="showPoza()">📸 Surpriza No.1 </button>
+    <button onclick="showScrisoare()">☀️ Surpriza No.2 </button>
+
+    <div id="poza" class="content">
+        <img src="stefi.jpeg" alt="Stefi">
+        <p>💜</p>
+    </div>
+
+    <div id="scrisoare" class="content">
+        <div class="letter">
+            Dragă Stefi,<br><br>
+            Vreau să îți reamintesc că ești o persoană foarte specială pentru mine, dar și pentru o grămadă de lume. Ai unul dintre cele mai frumoase suflete pe care le-am întâlnit și mereu mă impresionezi cum poți să pui binele altora înainte și să ajuți pe oricine oricând, chiar dacă și tu ai nevoie uneori. <br><br>
+
+            Știu că îți spun prea rar sau deloc, dar pentru mine ești o sursă de inspirație și un model. Efectiv cum ai reușit cu STS-ul, cât ai muncit, ai făcut un festival de teatru. Și facultatea să nu mai zic, toată motivația mea din sesiunea de restanțe venea de la tine când te vedeam că înveți pentru 5 examene și eu mă plângeam de unul, dar nici atunci nu ai zis nimic și tot mă încurajai. Sunt foarte mândră de tine pentru tot ceea ce faci și ești efectiv un model pentru mine. ⭐️ <br><br>
+
+            Mi-ai zis tu că în 2026 o să apară poate și ceva iubire în viața mea, dar eu cred că iubirea nu e doar cea romantică și vreau să spun că sunt norocoasă că am oameni pe care îi iubesc și care mă iubesc și tu mi-ai arătat pe deplin asta. Mi-ai arătat ce înseamnă să ții la o persoană și să ai grijă de ea, să faci lucruri frumoase fără să aștepți nimic înapoi, să ajuți și să asculți când ai și tu o mie de probleme și ce înseamnă o prietenie reală. Îți mulțumesc pentru asta! ❤️‍🩹 <br><br>
+
+            Mulțumesc că exiști! 🧸☀️<br><br>
+            Te pup 🤍
+        </div>
+    </div>
+
+</body>
+</html>
